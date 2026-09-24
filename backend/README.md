@@ -36,6 +36,7 @@ The API runs at `http://localhost:5000/api`. The seed creates these accounts, al
 | `DB_PATH` | `./data/sportify.db` | SQLite file |
 | `UPLOAD_DIR` | `./uploads` | Where audio and images are stored |
 | `CORS_ORIGIN` | `*` | Comma-separated list of allowed origins |
+| `FRONTEND_DIST` | `../frontend/dist` | Built frontend to serve at `/` (only if it exists) |
 | `MAX_AUDIO_SIZE_MB` / `MAX_IMAGE_SIZE_MB` | `20` / `5` | Upload limits |
 
 ## API

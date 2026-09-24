@@ -10,6 +10,7 @@ const config = {
   uploadDir: process.env.UPLOAD_DIR || path.join(__dirname, '..', 'uploads'),
   jwtSecret: process.env.JWT_SECRET || (env === 'production' ? null : 'dev-secret-change-me'),
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '7d',
+  frontendDist: process.env.FRONTEND_DIST || path.join(__dirname, '..', '..', 'frontend', 'dist'),
   corsOrigin: process.env.CORS_ORIGIN || '*',
   maxAudioSizeMb: Number(process.env.MAX_AUDIO_SIZE_MB) || 20,
   maxImageSizeMb: Number(process.env.MAX_IMAGE_SIZE_MB) || 5,
