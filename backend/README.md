@@ -43,7 +43,7 @@ The API runs at `http://localhost:5000/api`. The seed creates these accounts, al
 Send `Authorization: Bearer <token>` for authenticated routes. JSON bodies use camelCase.
 Routes that take files use `multipart/form-data`: `audio` for songs, `cover` for albums, songs and playlists, and `avatar` for profiles.
 Errors look like `{ "error": { "message": "...", "details": { "field": "problem" } } }`.
-List endpoints accept `page` and `limit` and return `{ items, page, limit, total }`.
+List endpoints accept `page` and `limit` and return the items under a named key plus paging info, for example `{ songs, page, limit, total }`.
 
 Legend: 🔓 public · 🔑 signed in · 🎤 artist or admin · 👤 owner or admin
 
